@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test name="Regression">
+	   <parameter name="url" value="https://www.google.com" />
+		<groups>
+			<run>
+				<include name="Smoke" />
+				<!-- <exclude name="Smoke" /> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="com.selenium.testng.FirstTest" />
+			<class name="com.selenium.testng.CarLoan" />
+			<class name="com.selenium.testng.PersonalLoan" />
+		</classes>
+	</test>
+</suite> 
